@@ -1,0 +1,12 @@
+--cpu Cortex-M4.fp
+".\final.o"
+"..\..\..\..\driverlib\rvmdk\driverlib.lib"
+".\uartstdio.o"
+".\buttons.o"
+".\pinout.o"
+"..\..\..\..\sensorlib\rvmdk\sensorlib.lib"
+".\startup_rvmdk.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict
+--entry Reset_Handler --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\final_1.map" -o .\final_1.axf

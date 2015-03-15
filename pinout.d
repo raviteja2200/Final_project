@@ -1,0 +1,12 @@
+.\pinout.o: ..\drivers\pinout.c
+.\pinout.o: C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\pinout.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\pinout.o: ..\..\..\..\inc/hw_gpio.h
+.\pinout.o: ..\..\..\..\inc/hw_memmap.h
+.\pinout.o: ..\..\..\..\inc/hw_types.h
+.\pinout.o: ..\..\..\..\driverlib/gpio.h
+.\pinout.o: ..\..\..\..\driverlib/pin_map.h
+.\pinout.o: ..\..\..\..\driverlib/rom.h
+.\pinout.o: ..\..\..\..\driverlib/rom_map.h
+.\pinout.o: ..\..\..\..\driverlib/sysctl.h
+.\pinout.o: ..\drivers/pinout.h
