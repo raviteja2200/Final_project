@@ -561,7 +561,7 @@ main(void)
                 // Multiply by 1000 to preserve first three decimal values.
                 // Truncates at the 3rd decimal place.
                 //
-                i32FPart[ui32Idx] = (int32_t) (pfData[ui32Idx] * 1000.0f);
+                i32FPart[ui32Idx] = (int32_t) (pfData[ui32Idx] * 100.0f);
 
                 //
                 // Subtract off the integer part from this newly formed decimal
@@ -582,14 +582,42 @@ main(void)
             //
             // Print the acceleration numbers in the table.
             //
-            UARTprintf("\033[5;17H%3d.%03d", i32IPart[0], i32FPart[0]);
-            UARTprintf("\033[5;40H%3d.%03d", i32IPart[1], i32FPart[1]);
-            UARTprintf("\033[5;63H%3d.%03d", i32IPart[2], i32FPart[2]);
-						
+            UARTprintf("\033[5;17H%3d", i32IPart[0]);
+            UARTprintf("\033[5;40H%3d", i32IPart[1]);
+            UARTprintf("\033[5;63H%3d", i32IPart[2]);
+						UARTprintf("\n");
+						UARTprintf("\n");
 						//
 						//	Writing code for right,left,stop,back forward
 						//
-						UARTprintf("\%d",i32IPart[0]);
+						//while(1)
+							//{
+								if (i32IPart[2]==9)
+								{
+									UARTprintf("STOP    \n");
+								}
+								else if (i32IPart[0]==-9|i32IPart[0]==-10)
+								{
+									UARTprintf("LEFT    \n");
+								}
+								else if (i32IPart[0]==9)
+								{
+									UARTprintf("RIGHT    \n");
+								}
+								else if (i32IPart[1]==5|i32IPart[2]==8)
+								{
+									UARTprintf("FORWARD \n");
+								}
+								else if (i32IPart[1]==-5|i32IPart[2]==8)
+								{
+									UARTprintf("BACKWARD\n");
+								}
+								//else
+									//{
+									//UARTprintf("STOP1\n");
+								//}
+							//}
+					
 
         }
     }

@@ -421,16 +421,6 @@
               <FilePath>..\..\..\..\utils\uartstdio.c</FilePath>
             </File>
             <File>
-              <FileName>buttons.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\drivers\buttons.c</FilePath>
-            </File>
-            <File>
-              <FileName>pinout.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\drivers\pinout.c</FilePath>
-            </File>
-            <File>
               <FileName>sensorlib.lib</FileName>
               <FileType>4</FileType>
               <FilePath>..\..\..\..\sensorlib\rvmdk\sensorlib.lib</FilePath>
@@ -439,6 +429,16 @@
               <FileName>startup_rvmdk.S</FileName>
               <FileType>2</FileType>
               <FilePath>..\..\ek-tm4c1294xl-boostxl-senshub\compdcm_mpu9150\startup_rvmdk.S</FilePath>
+            </File>
+            <File>
+              <FileName>buttons.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\drivers\buttons.c</FilePath>
+            </File>
+            <File>
+              <FileName>pinout.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\drivers\pinout.c</FilePath>
             </File>
           </Files>
         </Group>
