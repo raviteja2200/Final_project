@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\final_1.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\final_1.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Sat Mar 14 13:59:05 2015
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Sun Mar 15 17:15:54 2015
 <BR><P>
 <H3>Maximum Stack Usage =        344 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -235,7 +235,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[18]"></a>main</STRONG> (Thumb, 904 bytes, Stack size 200 bytes, final.o(.text))
+<P><STRONG><a name="[18]"></a>main</STRONG> (Thumb, 916 bytes, Stack size 200 bytes, final.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 344<LI>Call Chain = main &rArr; MPU9150AppI2CWait &rArr; MPU9150AppErrorHandler &rArr; UARTprintf &rArr; UARTvprintf &rArr; UARTwrite &rArr; UARTPrimeTransmit &rArr; IsBufferEmpty
 </UL>
 <BR>[Calls]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTprintf
@@ -341,6 +341,10 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
 </UL>
+<P><STRONG><a name="[4b]"></a>__user_initial_stackheap</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_rvmdk.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
 <P><STRONG><a name="[2b]"></a>PinoutSet</STRONG> (Thumb, 520 bytes, Stack size 16 bytes, pinout.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = PinoutSet &rArr; GPIOPinTypeEthernetLED &rArr; GPIOPadConfigSet
 </UL>
@@ -367,10 +371,6 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinRead
 </UL>
 <BR>[Called By]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MPU9150AppErrorHandler
-</UL>
-
-<P><STRONG><a name="[4b]"></a>__user_initial_stackheap</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_rvmdk.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
 <P><STRONG><a name="[92]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)

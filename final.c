@@ -586,7 +586,10 @@ main(void)
             UARTprintf("\033[5;40H%3d.%03d", i32IPart[1], i32FPart[1]);
             UARTprintf("\033[5;63H%3d.%03d", i32IPart[2], i32FPart[2]);
 						
-						
+						//
+						//	Writing code for right,left,stop,back forward
+						//
+						UARTprintf("\%d",i32IPart[0]);
 
         }
     }
